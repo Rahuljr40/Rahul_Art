@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap-4.6.2-dist/bootstrap-4.6.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="website icon" type="png" href="logo.png">
+    <style>
+        .before-footer-section {
+            padding: 7rem 0 12rem 0 !important;
+        }
+
+        .blog-section {
+            padding: 7rem 0 12rem 0;
+        }
+
+        .blog-section .post-entry a {
+            text-decoration: none;
+        }
+
+        .blog-section .post-entry .post-thumbnail {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .blog-section .post-entry .post-thumbnail img {
+            border-radius: 20px;
+            -webkit-transition: .3s all ease;
+            -o-transition: .3s all ease;
+            transition: .3s all ease;
+        }
+
+        .blog-section .post-entry .post-content-entry {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .blog-section .post-entry .post-content-entry h3 {
+            font-size: 16px;
+            margin-bottom: 0;
+            font-weight: 600;
+            margin-bottom: 7px;
+        }
+
+        .blog-section .post-entry .post-content-entry .meta {
+            font-size: 14px;
+        }
+
+        .blog-section .post-entry .post-content-entry .meta a {
+            font-weight: 600;
+        }
+
+        .btn {
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 30px;
+            color: #ffffff;
+            background: #2f2f2f;
+            border-color: #2f2f2f;
+        }
+
+        .btn:hover {
+            color: #ffffff;
+            background: #222222;
+            border-color: #222222;
+        }
+
+        .btn:active,
+        .btn:focus {
+            outline: none !important;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .btn.btn-primary {
+            background: #3b5d50;
+            border-color: #3b5d50;
+        }
+
+        .btn.btn-primary:hover {
+            background: #314d43;
+            border-color: #314d43;
+        }
+
+        .btn.btn-secondary {
+            color: #2f2f2f;
+            background: #f9bf29;
+            border-color: #f9bf29;
+        }
+
+        .btn.btn-secondary:hover {
+            background: #f8b810;
+            border-color: #f8b810;
+        }
+
+        .btn.btn-white-outline {
+            background: transparent;
+            border-width: 2px;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .btn.btn-white-outline:hover {
+            border-color: white;
+            color: #ffffff;
+        }
+
+        .footer-section {
+            padding: 80px 0;
+            background: #ffffff;
+        }
+
+        .footer-section .relative {
+            position: relative;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            color: #2f2f2f;
+            -webkit-transition: .3s all ease;
+            -o-transition: .3s all ease;
+            transition: .3s all ease;
+        }
+
+        .footer-section a:hover {
+            color: rgba(47, 47, 47, 0.5);
+        }
+
+        .footer-section .subscription-form {
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+            margin-top: 100px;
+        }
+
+        @media (min-width: 992px) {
+            .footer-section .subscription-form {
+                margin-top: 0px;
+                margin-bottom: 80px;
+            }
+        }
+
+        .footer-section .subscription-form h3 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #3b5d50;
+        }
+
+        .footer-section .subscription-form .form-control {
+            height: 50px;
+            border-radius: 10px;
+            font-family: "Inter", sans-serif;
+        }
+
+        .footer-section .subscription-form .form-control:active,
+        .footer-section .subscription-form .form-control:focus {
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border-color: #3b5d50;
+            -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-section .subscription-form .form-control::-webkit-input-placeholder {
+            font-size: 14px;
+        }
+
+        .footer-section .subscription-form .form-control::-moz-placeholder {
+            font-size: 14px;
+        }
+
+        .footer-section .subscription-form .form-control:-ms-input-placeholder {
+            font-size: 14px;
+        }
+
+        .footer-section .subscription-form .form-control:-moz-placeholder {
+            font-size: 14px;
+        }
+
+        .footer-section .subscription-form .btn {
+            border-radius: 10px !important;
+        }
+
+        .footer-section .sofa-img {
+            position: absolute;
+            top: -200px;
+            z-index: 1;
+            right: 0;
+        }
+
+        .footer-section .sofa-img img {
+            max-width: 380px;
+        }
+
+        .footer-section .links-wrap {
+            margin-top: 0px;
+        }
+
+        @media (min-width: 992px) {
+            .footer-section .links-wrap {
+                margin-top: 54px;
+            }
+        }
+
+        .footer-section .links-wrap ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section .footer-logo-wrap .footer-logo {
+            font-size: 32px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #3b5d50;
+        }
+
+        .footer-section .custom-social li {
+            margin: 2px;
+            display: inline-block;
+        }
+
+        .footer-section .custom-social li a {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+        <div class="container">
+            <a class="navbar-brand" href="index.php">Art Gallary<span>.</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+                aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsFurni">
+            <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li>
+                        <a class="nav-link" href="index.php">Home </a>
+                    </li>
+                    <li>
+
+                        <a class="nav-link" href="contactus.php">Contact US </a>
+                    </li>
+                    <li><a class="nav-link" href="products.php">Products </a></li>
+                    <li><a class="nav-link" href="aboutus.html">About US </a></li>
+                    <li><a class="nav-link" href="login.php">Login </a></li>
+
+
+                </ul>
+            </div>
+    </nav>
+
+
+
+
+        <div class="hero">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="intro-excerpt">
+                            <h1></h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Hero Section -->
+
+
+
+        <div class="untree_co-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center pt-5">
+                        <span class="display-3 thankyou-icon text-primary">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-check mb-5"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M11.354 5.646a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            </svg>
+                        </span>
+                        <h2 class="display-3 text-black">Thank you!</h2>
+                        <p class="lead mb-5">You order was successfuly completed.</p>
+                        <p><a href="index.php" class="btn btn-sm btn-outline-black">Back to shop</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Section -->
+        <footer class="footer-section">
+            <div class="container relative">
+
+                <div class="sofa-img">
+                    <!-- <img src="temp.png" alt="Image" class="img-fluid">-->
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="subscription-form">
+                            <h3 class="d-flex align-items-center"><span class="me-1"><img src="messs.svg" alt="Image"
+                                        class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+
+                            <form action="#" class="row g-3">
+                                <div class="col-auto">
+                                    <input type="text" class="form-control" placeholder="Enter your name">
+                                </div>
+                                <div class="col-auto">
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="col-auto">
+                                    <button class="btn btn-primary">
+                                        <span class="fa fa-paper-plane"></span>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-5 mb-5">
+                    <div class="col-lg-4">
+                        <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">The Art
+                                Shop<span>.</span></a></div>
+                        <p class="mb-4">An art gallery presents a carefully chosen assortment of artwork, crafts, and
+                            sculptures, giving artists a place to exhibit their creations and art lovers a chance to
+                            peruse and buy one-of-a-kind items.</p>
+
+                        <ul class="list-unstyled custom-social">
+                            <li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+                            <li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="row links-wrap">
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Knowledge base</a></li>
+                                    <li><a href="#">Live chat</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Jobs</a></li>
+                                    <li><a href="#">Our team</a></li>
+                                    <li><a href="#">Leadership</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">The Art</a></li>
+                                    <li><a href="#">The Painting</a></li>
+                                    <li><a href="#">The Sketches</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="border-top copyright">
+                    <div class="row pt-4">
+                        <div class="col-lg-6">
+                            <p class="mb-2 text-center text-lg-start">Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+                                Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a
+                                    href="https://themewagon.com">ThemeWagon</a>
+                                <!-- License information: https://untree.co/license/ -->
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 text-center text-lg-end">
+                            <ul class="list-unstyled d-inline-flex ms-auto">
+                                <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- End Footer Section -->
+
+
+        <script src="bootstrap.bundle.min.js">
+
+        </script>
+        <script src="js/tiny-slider.js"></script>
+        <script>
+            (function () {
+                'use strict';
+
+                var tinyslider = function () {
+                    var el = document.querySelectorAll('.testimonial-slider');
+
+                    if (el.length > 0) {
+                        var slider = tns({
+                            container: '.testimonial-slider',
+                            items: 1,
+                            axis: "horizontal",
+                            controlsContainer: "#testimonial-nav",
+                            swipeAngle: false,
+                            speed: 700,
+                            nav: true,
+                            controls: true,
+                            autoplay: true,
+                            autoplayHoverPause: true,
+                            autoplayTimeout: 3500,
+                            autoplayButtonOutput: false
+                        });
+                    }
+                };
+                tinyslider();
+
+
+
+
+                var sitePlusMinus = function () {
+
+                    var value,
+                        quantity = document.getElementsByClassName('quantity-container');
+
+                    function createBindings(quantityContainer) {
+                        var quantityAmount = quantityContainer.getElementsByClassName('quantity-amount')[0];
+                        var increase = quantityContainer.getElementsByClassName('increase')[0];
+                        var decrease = quantityContainer.getElementsByClassName('decrease')[0];
+                        increase.addEventListener('click', function (e) { increaseValue(e, quantityAmount); });
+                        decrease.addEventListener('click', function (e) { decreaseValue(e, quantityAmount); });
+                    }
+
+                    function init() {
+                        for (var i = 0; i < quantity.length; i++) {
+                            createBindings(quantity[i]);
+                        }
+                    };
+
+                    function increaseValue(event, quantityAmount) {
+                        value = parseInt(quantityAmount.value, 10);
+
+                        console.log(quantityAmount, quantityAmount.value);
+
+                        value = isNaN(value) ? 0 : value;
+                        value++;
+                        quantityAmount.value = value;
+                    }
+
+                    function decreaseValue(event, quantityAmount) {
+                        value = parseInt(quantityAmount.value, 10);
+
+                        value = isNaN(value) ? 0 : value;
+                        if (value > 0) value--;
+
+                        quantityAmount.value = value;
+                    }
+
+                    init();
+
+                };
+                sitePlusMinus();
+
+
+            })()
+        </script>
+    </body>
+
+</html>

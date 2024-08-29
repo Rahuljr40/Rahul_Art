@@ -1,0 +1,680 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <h2 class="h3 mb-3 text-black">Billing Details</h2>
+                    <div class="p-3 p-lg-5 border bg-white">
+                        <div class="form-group">
+                           
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="c_fname" class="text-black">First Name <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="c_fname" name="c_fname">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="c_lname" class="text-black">Last Name <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="c_lname" name="c_lname">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                               
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label for="c_address" class="text-black">Address <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="c_address" name="c_address"
+                                    placeholder="Street address">
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control"
+                                placeholder="Apartment, suite, unit etc. (optional)">
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="c_state_country" class="text-black">State / Country <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="c_state_country" name="c_state_country">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="c_postal_zip" class="text-black">Posta / Zip <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="c_postal_zip" name="c_postal_zip">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-5">
+                            <div class="col-md-6">
+                                <label for="c_email_address" class="text-black">Email Address <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="c_email_address" name="c_email_address">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="c_phone" class="text-black">Phone <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="c_phone" name="c_phone"
+                                    placeholder="Phone Number">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                          
+                            <div class="collapse" id="create_an_account">
+                                <div class="py-2 mb-4">
+                                    
+                                    <div class="form-group">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                           
+                            <div class="collapse" id="ship_different_address">
+                                <div class="py-2">
+
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="c_order_notes" class="text-black">Order Notes</label>
+                            <textarea name="c_order_notes" id="c_order_notes" cols="30" rows="5" class="form-control"
+                                placeholder="Write your notes here..."></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            
+                            <div class="p-3 p-lg-5 border bg-white">
+
+                               
+                                <div class="input-group w-75 couponcode-wrap">
+                                   
+                                    <div class="input-group-append">
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+     
+
+                             
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <h2 class="h3 mb-3 text-black">Your Order</h2>
+                            <div class="p-3 p-lg-5 border bg-white">
+                                <table class="table site-block-order-table mb-5">
+                                    <thead>
+                                        <th>Product</th>
+                                        <th>Total</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>painting1 <strong class="mx-2">x</strong>1</td>
+                                          <td>₹250.00  </td>
+                                        </tr>
+                                        <tr>
+                                          <td>rose flower <strong class="mx-2">x</strong>   1</td>
+                                          <td>₹100.00</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-black font-weight-bold"><strong>combo</strong></td>
+                                          <td class="text-black">₹350.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-black font-weight-bold"><strong>Order Total</strong></td>
+                                            <td class="text-black font-weight-bold"><strong>₹350.00</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="border p-3 mb-3">
+                                    <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse"
+                                            href="upi.php"
+                                            >UPI</a></h3>
+
+                                    <div class="collapse" id="collapsebank">
+                                        <div class="py-2">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div >
+                                    
+
+                                    <div class="collapse" id="collapsecheque">
+                                        <div class="py-2">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="border p-3 mb-5">
+                                    
+                                <input type="checkbox"> Cash On Delivery
+                                <!-- <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse"
+                                            href="#collapsepaypal" role="button" aria-expanded="false"
+                                            aria-controls="collapsepaypal"></a></h3> -->
+
+                                    <div class="collapse" id="collapsepaypal">
+                                        <div class="py-2">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-black btn-lg py-3 btn-block" id="place_order_button"
+                                        >Place Order</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- </form> -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="nav-link cart-link" href="addtocart.php" onclick="addtocart()">
+                            <div class="cart"><i class="fas fa-shopping-cart cart-icon"></i>
+                                <p id="count">0</p>
+                            </div>
+
+                        </a>
+
+
+
+
+
+
+
+
+/* <?php
+session_start();
+error_reporting(0);
+include('db/config.php');
+if (isset($_POST['submit'])) {
+    $pid = intval($_GET['pkgid']);
+    $bname = $_POST['fullname'];
+    $bemail = $_POST['email'];
+    $bmobile = $_POST['mobile'];
+    $bnameoncard = $_POST['nameoncard'];
+    $bcard_number = $_POST['card_number'];
+    $bexpire_month = $_POST['expire_month'];
+    $bexpire_year = $_POST['expire_year'];
+    $bcvv = $_POST['cvv'];
+    $bcountry = $_POST['country'];
+    $bstreet_1 = $_POST['street_1'];
+    $bstreet_2 = $_POST['street_2'];
+    $bcity = $_POST['city'];
+    $bstate = $_POST['state'];
+    $bpincode = $_POST['pincode'];
+    $badditional_information = $_POST['additional_information'];
+    $status = 0;
+    $sql = "INSERT INTO booking(PackageId,FirstName,Email, Phone, NameOnCard, CardNumber, ExpMonth, ExpYear, CVV, Country, StreetLine1, StreetLine2, City, State1, Pincode, Additional_Information,status) VALUES('$pid','$bname','$bemail', '$bmobile', '$bnameoncard', '$bcard_number', '$bexpire_month', '$bexpire_year', '$bcvv', '$bcountry', '$bstreet_1', '$bstreet_2', '$bcity', '$bstate', '$bpincode', '$badditional_information','$status')";
+
+    if ($conn->query($sql) === TRUE) {
+        $lastInsertId = $conn->insert_id;
+
+        if ($lastInsertId) {
+            echo "<script>
+                alert('Booking Successful 😊');
+                window.location.href='confirmation.php?bid=$lastInsertId&pkgid=" . htmlentities($pid) . "';
+                </script>";
+        } else {
+            $error = "Something went wrong. Please try again";
+        }
+    } else {
+        $error = "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Is Life</title>
+    <link rel="website icon" type="png" href="logo.png">
+
+    <script>
+        function productbuy() {
+            alert("See More?");
+            window.location.assign("products.php")
+
+        }
+
+        function addtocart()
+        {
+            alert('Redirecting to cart page...');
+            window.location.assign("addtocart.php")
+        }
+        
+        </script>
+
+
+</head>
+
+<body style="background-color: aliceblue;">
+    <!-- <header>
+        <h1>World's Most Famous Paintings</h1>
+    </header> -->
+
+    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+        <div class="container">
+            <a class="navbar-brand" href="index.php">Art Gallary<span>.</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+                aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsFurni">
+                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li>
+                        <a class="nav-link" href="index.php">Home </a>
+                    </li>
+                    <li>
+
+                        <a class="nav-link" href="contactus.html">Contact US </a>
+                    </li>
+                    <li><a class="nav-link" href="products.php">Products </a></li>
+                    <li><a class="nav-link" href="aboutus.html">About US </a></li>
+                    <li><a class="nav-link" href="login.php">Login </a></li>
+                    <li>
+                    <a class="nav-link cart-link" href="addtocart.php" onclick="addtocart()">
+                        <i class="fas fa-shopping-cart cart-icon"  ></i> <!-- Font Awesome cart icon -->
+                    </a>
+                    </li>
+
+
+                </ul>
+            </div>
+    </nav>
+
+
+
+
+
+    <div id="page" class="page">
+        <!-- ***site header html start*** -->
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <?php include 'navbar.php'; ?>
+        </div>
+        <main id="content" class="site-main">
+            <section class="booking-inner-page">
+                <!-- ***Inner Banner html start form here*** -->
+                <div class="inner-banner-wrap">
+                    <div class="container">
+                        <div class="inner-banner-content">
+                            <button class="round-btn-head">
+                               
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***Inner Banner html end here*** -->
+                <div class="booking-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 right-sidebar">
+                                <!-- step one form html start -->
+                                <div class="booking-form-wrap">
+                                    <form method="POST" action="">
+                                        <div class="booking-content-1">
+                                            <div class="form-title">
+                                                <span>1</span>
+                                                <h3>Your Details</h3>
+                                            </div>
+                                            <div class="row">
+
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Full Name*</label>
+                                                        <input type="text" class="form-control" name="fullname" id="fullname" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <?php
+                                                    include('config.php');
+                                                    $id = $_SESSION['id'];
+                                                    $sql = "SELECT email from users where id=$id";
+                                                    $query = $dbh->prepare($sql);
+                                                    $query->execute();
+                                                    $results = $query->fetchAll(PDO::FETCH_OBJ);
+                                                    $cnt = 1;
+                                                    if ($query->rowCount() > 0) {
+                                                        foreach ($results as $result) {
+                                                            //   print_r($result); 
+                                                    ?>
+                                                    <?php }
+                                                    } ?>
+
+                                                    <div class="form-group">
+                                                        <label>Email*</label>
+                                                        <input type="email" class="form-control" name="email" id="email" value="<?php echo htmlentities($result->email); ?>" readonly>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Phone*</label>
+                                                        <input type="text" class="form-control" name="mobile" id="mobile" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content-2">
+                                            <div class="form-title">
+                                                <span>2</span>
+                                                <h3>Payment Information</h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label>Name on card*</label>
+                                                        <input type="text" class="form-control" name="nameoncard" id="nameoncard" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label>Card number*</label>
+                                                                <input type="text" name="card_number" id="card_number" class="form-control" minlength="16" maxlength="16" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <img src="assets/cards.png" alt="Cards">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Expiration date*</label>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <input type="text" name="expire_month" id="expire_month" class="form-control" placeholder="MM" minlength="1" maxlength="2" required>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <input type="number" name="expire_year" id="expire_year" class="form-control" placeholder="Year" min="2023" max="3000" required>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Security code*</label>
+                                                                <div class="row">
+                                                                    <div class="col-4">
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="ccv" id="ccv" class="form-control" placeholder="CCV" minlength="3" maxlength="3" required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-8">
+                                                                        <img src="assets/icon_ccv.gif" alt="ccv"><small>Last 3 digits</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content-3">
+                                            <div class="form-title">
+                                                <span>3</span>
+                                                <h3>Address</h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label>Country*</label>
+                                                        <select class="select" name="country" id="country" required>
+                                                            <option value="" selected="">Select your country</option>
+                                                            <option value="Europe">Europe</option>
+                                                            <option value="United states">United states</option>
+                                                            <option value="Asia">Asia</option>
+                                                            <option value="India">India</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Street line 1*</label>
+                                                        <input type="text" name="street_1" id="street_1" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Street line 2</label>
+                                                        <input type="text" name="street_2" id="street_2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label>City*</label>
+                                                        <input type="text" name="city" id="city" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>State*</label>
+                                                        <input type="text" name="state" id="state" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Postal code*</label>
+                                                        <input type="text" name="pincode" id="pincode" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label>Additional Information</label>
+                                                        <textarea class="textarea" rows="4" name="additional_information" id="additional_information" placeholder="Add any addition information you want"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End row -->
+                                        </div>
+                                        <div class="form-policy">
+                                            <h3>Cancellation policy</h3>
+                                            <div class="form-group">
+                                                <label class="checkbox-list">
+                                                    <input type="checkbox" name="s" required>
+                                                    <span class="custom-checkbox"></span>
+                                                    I accept terms and conditions and general policy.
+                                                </label>
+                                            </div>
+                                            <a><button type="submit" name="submit" class="round-btn">SUBMIT</button></a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- step one form html end -->
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="price-table-summary">
+                                    <h4 class="bg-title">Summary</h4>
+                                    <?php
+                                    include('config.php');
+                                    $pid = $_GET['pkgid'];
+                                    $sql = "SELECT * from tbltourpackages where PackageId=$pid";
+                                    $query = $dbh->prepare($sql);
+                                    $query->execute();
+                                    $results = $query->fetchAll(PDO::FETCH_OBJ);
+                                    $cnt = 1;
+                                    if ($query->rowCount() > 0) {
+                                        foreach ($results as $result) {
+                                            //   print_r($result); 
+                                    ?>
+
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Packages cost </strong>
+                                                        </td>
+                                                        <td class="text-right">₹
+                                                            <?php echo $price = htmlentities($result->PackagePrice); ?>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" value="Dedicated tour guide" id="myCheckbox">
+                                                            <strong>Dedicated tour guide</strong>
+                                                        </td>
+
+                                                        <td class="text-right">
+                                                            ₹
+                                                            <span id="costPrice">0</span>
+                                                            <script type="text/javascript">
+                                                                const checkbox = document.getElementById("myCheckbox");
+                                                                const costPrice = document.getElementById("costPrice");
+
+                                                                checkbox.addEventListener('change', function() {
+                                                                    if (checkbox.checked) {
+                                                                        costPrice.innerHTML = "500";
+                                                                    } else {
+                                                                        costPrice.innerHTML = "0";
+                                                                    }
+                                                                });
+                                                            </script>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>tax</strong>
+                                                        </td>
+                                                        <td class="text-right">
+                                                            <?php echo $tax = 20; ?>%
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="total">
+                                                        <td>
+                                                            <strong>Total cost</strong>
+                                                        </td>
+                                                        <td class="text-right">
+                                                            <strong>
+                                                                <?php
+                                                                $dtg = 0; // Initialize dtg variable
+                                                                if (isset($_POST['myCheckbox'])) {
+                                                                    $dtg = 500; // Set dtg cost if checkbox is checked
+                                                                }
+                                                                $total = $price + $dtg + ($price * 20 / 100); // Calculate total cost
+                                                                echo $total;
+                                                                ?>
+                                                            </strong>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                    <?php }
+                                    } ?>
+                                </div>
+                                <div class="widget-bg widget-support-wrap">
+                                    <div class="support-content">
+                                        <h5><i class="fas fa-phone-volume"></i> HELP AND SUPPORT</h5>
+                                        <div class="support-content-inner">
+                                            <h6>+91 8126XXXXXX</h6>
+                                            <small>Monday to Friday 9.00am - 7.30pm</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <?php include 'footer.php'; ?>
+
+    </div>
+</body>
+
+</html>*/
